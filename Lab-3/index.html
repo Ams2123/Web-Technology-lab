@@ -1,0 +1,72 @@
+<!-- A webpage for filling forms and validating it -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <!-- style sheet of the website -->
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div class="heading">
+            <h2><strong>Event Registration form</strong></h2>
+        </div>
+        <div class="empty"></div>
+        <div class="form" >
+            <form id="RegForm">
+                <!-- label and inputs for firstname input type : text-->
+                <label for="FirstName">First Name</label>
+                <br>
+                <input type="text" name="FirstName" id="FirstName">
+                <br>
+
+                <!-- label and inputs for lastname input type : text -->
+                <label for="LastName">Last Name</label>
+                <br>
+                <input type="text" name="LastName" id="LastName">
+                <br>
+
+                <!-- label and inputs for age and dob input type : number and date-->
+                <label for="Age">Age</label>     
+                <label for="DOB">DOB</label>
+                <br>
+                <input type="number" name="Age" id="Age">
+                <input type="date/month/year" name="DOB" id="DOB">
+                <br>
+
+                <!-- label and inputs for gender and email address input type : menu and text-->
+                <label for="Gender">Gender</label>
+                <label for="EmailAdd">Email Address</label>
+                <br>
+                <select name="Gender" id="Gender">
+                    <option style="visibility:hidden">      </option>
+                    <option>Male  </option>
+                    <option>Female</option>
+                    <option>Other </option>
+                </select>
+                <input type="text" name="EmailAdd" id="EmailAdd">
+                <br>
+
+                <!-- label and inputs for phone numbers input type : number-->
+                <label for="PhNo1">Ph No. 1</label>
+                <label for="PhNo2">Ph No. 2</label>
+                <br>
+                <input type="text" name="PhNo1" id="PhNo1">
+                <input type="text" name="PhNo2" id="PhNo2">
+                <br>
+
+                <!-- label and inputs for regestration number and college mail id input type : number and text-->
+                <label for="RegNo">Reg. No.</label>
+                <label for="ClgMail">College Mail</label>
+                <br>
+                <input type="text" name="RegNo" id="RegNo">
+                <input type="text" name="ClgMail" id="ClgMail">
+                <br>
+
+                <!-- submit button calls the function validate on clicking-->
+                <input type="Submit" value="Submit" class="submit">
+            </form>
+        </div>
+    </body>
+</html>
